@@ -7,8 +7,8 @@ spec:
     app.kubernetes.io/name: my-test
   type: NodePort
   ports:
-  - name: name-of-service-port
-    protocol: TCP
-    port: 3005
-    targetPort: 80
-    nodePort: 31600
+    - name: name-of-service-port
+      protocol: TCP
+      port: 3005
+      targetPort: 3005
+      nodePort: 31600

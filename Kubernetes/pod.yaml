@@ -6,18 +6,18 @@ metadata:
     app.kubernetes.io/name: my-test
 spec:
   containers:
-  - name: my-test
-    image: node-hello-world:latest
-    imagePullPolicy: Never
-    env:
-    - name: NODE_PORT
-      value: "80"
-    ports:
-      - containerPort: 3005
-    resources:
+    - name: my-test
+      image: node-hello-world:latest
+      imagePullPolicy: Never
+      env:
+        - name: NODE_PORT
+          value: "3005"
+      ports:
+        - containerPort: 3005
+      resources:
         requests:
           memory: "64Mi"
           cpu: "250m"
         limits:
           memory: "1024Mi"
-          cpu: "500m" 
+          cpu: "500m"
